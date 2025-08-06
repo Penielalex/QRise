@@ -10,13 +10,15 @@ import androidx.compose.ui.graphics.Color
 private val DarkColorScheme = darkColorScheme(
     primary = Orange,
     secondary = White,
-    background = Black
+    background = Black,
+    tertiary = PureBlack
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Orange,
     secondary = Black,
-    background = White
+    background = White,
+    tertiary = OffWhite
 )
 
 @Composable

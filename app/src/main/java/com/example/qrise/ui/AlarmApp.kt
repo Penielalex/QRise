@@ -52,7 +52,7 @@ fun AlarmApp(){
 
                 }
                 composable(route = "create screen"){
-                    CreateScreen()
+                    CreateScreen(navback={navController.popBackStack()})
 
                 }
             }

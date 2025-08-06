@@ -64,13 +64,13 @@ fun ScrollableTimePicker(
     Box(
         modifier = Modifier
             .padding(30.dp)
-            .clip(RoundedCornerShape(16.dp))
+            .clip(RoundedCornerShape(59.dp))
             .border(
                 width = 2.dp,
                 brush = Brush.verticalGradient(
                     colors = listOf(MaterialTheme.colorScheme.primary, Color.White)
                 ),
-                shape = RoundedCornerShape(16.dp)
+                shape = RoundedCornerShape(59.dp)
             )
             .padding(8.dp)
             .fillMaxWidth()
