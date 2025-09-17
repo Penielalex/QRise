@@ -35,7 +35,7 @@ import com.example.qrise.R
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AlarmComponent(
-    onChoiceSelected: (selectedDays: Set<String>, alarmName: String, selectedSound: String?) -> Unit
+    onChoiceSelected: (selectedDays: List<String>, alarmName: String, selectedSound: String) -> Unit
 
 ) {
     val context = LocalContext.current
@@ -79,7 +79,7 @@ fun AlarmComponent(
         }
         mediaPlayer?.start()
     }
-    var selectedDays by remember { mutableStateOf(setOf<String>()) }
+    var selectedDays by remember { mutableStateOf(listOf<String>()) }
     var alarmName by remember { mutableStateOf(TextFieldValue("")) }
     var showSoundDialog by remember { mutableStateOf(false) }
     var selectedSound by remember { mutableStateOf("Beep") }
